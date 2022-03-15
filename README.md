@@ -3,3 +3,6 @@
 + super user :
  ----  user : admin
  ----  passwrd:admin
+for the first instal make sure to load Virtualenv : - python -m venv Project
+activate virtualenv : Project\Script\activate
+python manage.py runserver : ouvrir le serveur 
