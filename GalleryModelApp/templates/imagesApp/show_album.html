@@ -1,0 +1,68 @@
+
+
+<div class="album">
+        <div class="container">
+          <div class="row">
+        {% for image in gallery %}
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" style="width:20rem;height:23rem;">
+                <div class="card-header">{{gallery.name}}</div>
+                <div class="card-body">
+                  <img class="card-img-top"src = "{{ gallery.photo.url }}" data-toggle="modal" data-target="#myModal{{gallery.id}}" style="height:150px;"/>
+
+
+                    <br>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#myModal{{gallery.id}}">View</button>
+                    </div>
+                    <small class="text-muted">Posted : {{gallery.pub_date|timesince}}</small>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Modal -->
+<div class="modal fade" id="myModal{{gallery.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="#{{gallery.name}}">{{image.name}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div>
+        <img src = "{{ gallery.photo.url }}" class="img-fluid" alt="{{gallery.name}}"/>
+      </div>
+      <div class="modal-body">{{gallery.description}}</div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-info" value="https://django-photo-gallery.herokuapp.com{{ gallery.photo.url }}" onclick="copyURL(this.value)">Copy URL</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function copyURL(value){
+  function handler(event){
+    event.clipboardData.setData('text/plain',value);
+    event.preventDefault();
+    document.removeEventListener('copy',handler, true);
+  }
+  document.addEventListener('copy', handler, true);
+  document.execCommand('copy');
+}
+</script>
+          {% empty %}
+          <h3>The gallery is still empty!</h3>
+
+
+        {% endfor %}
+
+
+</div>
+
+
+
