@@ -17,4 +17,6 @@
 
 + after you run git clone and install requiremnts.txt you have tow path :
     --- the first is localhost that alow to shows alll 3D model with a pop-up to consulte the description and details .
+    ![image](https://user-images.githubusercontent.com/37112408/159118662-212d30b2-4a57-4d39-ab6e-55564beccf11.png)
+
     --- the second is localhost/admin for adding new 3D model 
