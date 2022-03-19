@@ -7,6 +7,7 @@ class gallery(models.Model):
     description = models.CharField(max_length=500, default='description photo ')
     date_pub = models.DateField(null=True,blank=True)
     photo = models.ImageField(upload_to='photos/%y/%m/%d')
+    photo_3D = models.FileField(upload_to='photos/%y/%m/%d',default='.glb')
     activate = models.BooleanField(default=True)
     pos_x = models.IntegerField(null=True,blank=True)
     pos_y = models.IntegerField(null=True,blank=True)

@@ -1,0 +1,1319 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 18605,
+      "max": [
+        1.3202319145202637,
+        3.0088608264923096,
+        0.9232324957847595
+      ],
+      "min": [
+        -1.3202319145202637,
+        -3.451120376586914,
+        -0.6539430022239685
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 223260,
+      "componentType": 5126,
+      "count": 18605,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 18605,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999641180038452,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 18605,
+      "max": [
+        0.9927037954330444,
+        0.9980031847953796
+      ],
+      "min": [
+        0.006970195099711418,
+        0.00289076566696167
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 66654,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 446520,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        1.0997661352157593,
+        1.704699993133545,
+        0.8564832210540771
+      ],
+      "min": [
+        -1.0997661352157593,
+        -1.7729171514511108,
+        -0.5442867875099182
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 452196,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        0.9970051646232605,
+        0.9748247265815735,
+        0.986456573009491
+      ],
+      "min": [
+        -0.9970051646232605,
+        -0.9999983310699463,
+        -0.984015941619873
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 297680,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        1.0,
+        0.8454056978225708,
+        0.9970051646232605,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.7558716535568237,
+        -0.9969432353973389,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 148840,
+      "componentType": 5126,
+      "count": 473,
+      "max": [
+        0.9848985075950623,
+        0.9750508069992065
+      ],
+      "min": [
+        0.015101521275937557,
+        0.015101521275937557
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 266616,
+      "componentType": 5125,
+      "count": 1224,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 457872,
+      "componentType": 5126,
+      "count": 690,
+      "max": [
+        0.2043909877538681,
+        2.842808246612549,
+        0.1642201542854309
+      ],
+      "min": [
+        -0.20448723435401917,
+        -3.507781505584717,
+        -0.47860419750213623
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 466152,
+      "componentType": 5126,
+      "count": 690,
+      "max": [
+        1.0,
+        0.9987695813179016,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9999768733978271,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 305248,
+      "componentType": 5126,
+      "count": 690,
+      "max": [
+        1.0,
+        1.0,
+        0.7216269969940186,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.7601274847984314,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 152624,
+      "componentType": 5126,
+      "count": 690,
+      "max": [
+        0.95694899559021,
+        0.9851802587509155
+      ],
+      "min": [
+        0.04297465831041336,
+        0.09071914106607437
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 271512,
+      "componentType": 5125,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 474432,
+      "componentType": 5126,
+      "count": 440,
+      "max": [
+        1.0940115451812744,
+        2.869558334350586,
+        0.28678345680236816
+      ],
+      "min": [
+        -1.0940115451812744,
+        -3.289673089981079,
+        -0.15066200494766235
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 479712,
+      "componentType": 5126,
+      "count": 440,
+      "max": [
+        0.9995888471603394,
+        1.0,
+        0.9711750745773315
+      ],
+      "min": [
+        -0.9995888471603394,
+        -0.9775241613388062,
+        -0.9992924928665161
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 316288,
+      "componentType": 5126,
+      "count": 440,
+      "max": [
+        0.9914857745170593,
+        0.9995933771133423,
+        0.9930117130279541,
+        1.0
+      ],
+      "min": [
+        -0.999998152256012,
+        -0.9995934367179871,
+        -0.993011474609375,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 158144,
+      "componentType": 5126,
+      "count": 440,
+      "max": [
+        0.9978678226470947,
+        0.786896824836731
+      ],
+      "min": [
+        0.4157291650772095,
+        0.06650648266077042
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 283032,
+      "componentType": 5125,
+      "count": 1728,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 484992,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        1.023358702659607,
+        1.9277287721633911,
+        0.831336498260498
+      ],
+      "min": [
+        -1.023358702659607,
+        -1.4573332071304321,
+        0.28065767884254456
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 487848,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        0.9443985819816589,
+        0.603207528591156,
+        0.8971751928329468
+      ],
+      "min": [
+        -0.9443985819816589,
+        -0.9890119433403015,
+        0.14783601462841034
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 323328,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        0.1277748942375183,
+        0.9999996423721313,
+        0.9890119433403015,
+        1.0
+      ],
+      "min": [
+        -0.08623157441616058,
+        -0.9999874830245972,
+        -0.07074421644210815,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 161664,
+      "componentType": 5126,
+      "count": 238,
+      "max": [
+        0.9491430521011353,
+        0.98514723777771
+      ],
+      "min": [
+        0.01302841305732727,
+        0.005683509632945061
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 289944,
+      "componentType": 5125,
+      "count": 930,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 490704,
+      "componentType": 5126,
+      "count": 2212,
+      "max": [
+        1.1472969055175781,
+        2.8600165843963623,
+        0.9006770849227905
+      ],
+      "min": [
+        -1.147296667098999,
+        -2.6934080123901367,
+        -0.6930381655693054
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 517248,
+      "componentType": 5126,
+      "count": 2212,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 327136,
+      "componentType": 5126,
+      "count": 2212,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 163568,
+      "componentType": 5126,
+      "count": 2212,
+      "max": [
+        0.9887299537658691,
+        0.9879823327064514
+      ],
+      "min": [
+        0.011269995011389256,
+        0.011269995011389256
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 293664,
+      "componentType": 5125,
+      "count": 7104,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 543792,
+      "componentType": 5126,
+      "count": 4258,
+      "max": [
+        1.1539151668548584,
+        2.886028289794922,
+        0.2847377359867096
+      ],
+      "min": [
+        -1.1539151668548584,
+        -3.266446828842163,
+        -0.9041346311569214
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 594888,
+      "componentType": 5126,
+      "count": 4258,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 362528,
+      "componentType": 5126,
+      "count": 4258,
+      "max": [
+        0.999989926815033,
+        0.9991534352302551,
+        0.9774253964424133,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9882276654243469,
+        -0.9349455833435059,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 181264,
+      "componentType": 5126,
+      "count": 4258,
+      "max": [
+        0.9901286363601685,
+        0.9910208582878113
+      ],
+      "min": [
+        0.011646360158920288,
+        0.01189194992184639
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 322080,
+      "componentType": 5125,
+      "count": 20586,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 645984,
+      "componentType": 5126,
+      "count": 120,
+      "max": [
+        0.2979549765586853,
+        0.10026859492063522,
+        1.10530686378479
+      ],
+      "min": [
+        -0.2979549765586853,
+        -0.11856318265199661,
+        0.905941367149353
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 647424,
+      "componentType": 5126,
+      "count": 120,
+      "max": [
+        0.9135341644287109,
+        0.9717664122581482,
+        0.9856864213943481
+      ],
+      "min": [
+        -0.9135341644287109,
+        -0.9843021035194397,
+        0.17649196088314056
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 430656,
+      "componentType": 5126,
+      "count": 120,
+      "max": [
+        0.6274499297142029,
+        0.8677810430526733,
+        0.6710668802261353,
+        1.0
+      ],
+      "min": [
+        -0.6526063680648804,
+        -0.9912799000740051,
+        -0.9842160940170288,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 215328,
+      "componentType": 5126,
+      "count": 120,
+      "max": [
+        0.9345185160636902,
+        0.9418261051177979
+      ],
+      "min": [
+        0.05817398056387901,
+        0.05817398056387901
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 404424,
+      "componentType": 5125,
+      "count": 492,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "8sianDude (https://sketchfab.com/haoliu95)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/2001-crown-victoria-taxi-game-prop-2429a825ff1646568e8e6e1453f9c501",
+      "title": "2001 Crown Victoria Taxi Game Prop"
+    },
+    "generator": "Sketchfab-12.70.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 406392,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 216288,
+      "byteOffset": 406392,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 648864,
+      "byteOffset": 622680,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 432576,
+      "byteOffset": 1271544,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1704120,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/main_frame_baseColor.png"
+    },
+    {
+      "uri": "textures/main_frame_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/main_frame_normal.png"
+    },
+    {
+      "uri": "textures/interior2_baseColor.png"
+    },
+    {
+      "uri": "textures/interior2_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/interior2_normal.png"
+    },
+    {
+      "uri": "textures/plate_baseColor.png"
+    },
+    {
+      "uri": "textures/plate_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/plate_normal.png"
+    },
+    {
+      "uri": "textures/glass_baseColor.png"
+    },
+    {
+      "uri": "textures/glass_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/glass_normal.png"
+    },
+    {
+      "uri": "textures/interior_bottom_baseColor.png"
+    },
+    {
+      "uri": "textures/interior_bottom_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/interior_bottom_normal.png"
+    },
+    {
+      "uri": "textures/wheels_and_parts_baseColor.png"
+    },
+    {
+      "uri": "textures/wheels_and_parts_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/wheels_and_parts_normal.png"
+    },
+    {
+      "uri": "textures/taxi_sign_baseColor.png"
+    },
+    {
+      "uri": "textures/taxi_sign_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/taxi_sign_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "main_frame",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "interior2",
+      "normalTexture": {
+        "index": 5
+      },
+      "occlusionTexture": {
+        "index": 4
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 4
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "plate",
+      "normalTexture": {
+        "index": 8
+      },
+      "occlusionTexture": {
+        "index": 7
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicRoughnessTexture": {
+          "index": 7
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "glass",
+      "normalTexture": {
+        "index": 11
+      },
+      "occlusionTexture": {
+        "index": 10
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 9
+        },
+        "metallicRoughnessTexture": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "glass_window",
+      "normalTexture": {
+        "index": 11
+      },
+      "occlusionTexture": {
+        "index": 10
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.5661196242208696
+        ],
+        "baseColorTexture": {
+          "index": 9
+        },
+        "metallicRoughnessTexture": {
+          "index": 10
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "interior_bottom",
+      "normalTexture": {
+        "index": 14
+      },
+      "occlusionTexture": {
+        "index": 13
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 12
+        },
+        "metallicRoughnessTexture": {
+          "index": 13
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "wheels_and_parts",
+      "normalTexture": {
+        "index": 17
+      },
+      "occlusionTexture": {
+        "index": 16
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 15
+        },
+        "metallicRoughnessTexture": {
+          "index": 16
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "taxi_sign",
+      "normalTexture": {
+        "index": 20
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 18
+        },
+        "metallicRoughnessTexture": {
+          "index": 19
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "crown_vic_taxi_main_frame_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_interior2_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_plate_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_glass_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 16,
+            "POSITION": 15,
+            "TANGENT": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_glass_window_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TANGENT": 22,
+            "TEXCOORD_0": 23
+          },
+          "indices": 24,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_interior_bottom_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 26,
+            "POSITION": 25,
+            "TANGENT": 27,
+            "TEXCOORD_0": 28
+          },
+          "indices": 29,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "crown_vic_taxi_wheels_and_parts_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 31,
+            "POSITION": 30,
+            "TANGENT": 32,
+            "TEXCOORD_0": 33
+          },
+          "indices": 34,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "taxi_sign_taxi_sign_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 36,
+            "POSITION": 35,
+            "TANGENT": 37,
+            "TEXCOORD_0": 38
+          },
+          "indices": 39,
+          "material": 7,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "10fd7beeb2454f0d99addb3ec0e9be88.fbx"
+    },
+    {
+      "children": [
+        3,
+        11,
+        14,
+        16
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "crown_vic_taxi"
+    },
+    {
+      "mesh": 0,
+      "name": "crown_vic_taxi_main_frame_0"
+    },
+    {
+      "mesh": 1,
+      "name": "crown_vic_taxi_interior2_0"
+    },
+    {
+      "mesh": 2,
+      "name": "crown_vic_taxi_plate_0"
+    },
+    {
+      "mesh": 3,
+      "name": "crown_vic_taxi_glass_0"
+    },
+    {
+      "mesh": 4,
+      "name": "crown_vic_taxi_glass_window_0"
+    },
+    {
+      "mesh": 5,
+      "name": "crown_vic_taxi_interior_bottom_0"
+    },
+    {
+      "mesh": 6,
+      "name": "crown_vic_taxi_wheels_and_parts_0"
+    },
+    {
+      "children": [
+        12
+      ],
+      "matrix": [
+        -29.08647719990347,
+        -5.518906457566863,
+        -95.51711910171437,
+        0.0,
+        56.63930913109449,
+        79.46723428563203,
+        -21.83912397841966,
+        0.0,
+        77.11008775993375,
+        -60.45246356562044,
+        -19.98834696773717,
+        0.0,
+        407.6245422363281,
+        590.38623046875,
+        -100.54539489746094,
+        1.0
+      ],
+      "name": "Lamp"
+    },
+    {
+      "children": [
+        13
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Object_12"
+    },
+    {
+      "name": "Object_13"
+    },
+    {
+      "children": [
+        15
+      ],
+      "matrix": [
+        -65.15583280329096,
+        -44.52713576570858,
+        -61.41703047373549,
+        0.0,
+        -32.40134137821245,
+        89.53957451233616,
+        -30.542088974418615,
+        0.0,
+        68.59205472129975,
+        -1.0718647115348782e-05,
+        -72.7676336239627,
+        0.0,
+        748.1131591796875,
+        534.3665161132813,
+        650.7639770507813,
+        1.0
+      ],
+      "name": "Camera"
+    },
+    {
+      "name": "Object_15"
+    },
+    {
+      "children": [
+        17
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -4.6566128730773926e-08,
+        -3.725290298461914e-07,
+        0.0,
+        1.0
+      ],
+      "name": "taxi_sign"
+    },
+    {
+      "mesh": 7,
+      "name": "taxi_sign_taxi_sign_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    },
+    {
+      "sampler": 0,
+      "source": 7
+    },
+    {
+      "sampler": 0,
+      "source": 8
+    },
+    {
+      "sampler": 0,
+      "source": 9
+    },
+    {
+      "sampler": 0,
+      "source": 10
+    },
+    {
+      "sampler": 0,
+      "source": 11
+    },
+    {
+      "sampler": 0,
+      "source": 12
+    },
+    {
+      "sampler": 0,
+      "source": 13
+    },
+    {
+      "sampler": 0,
+      "source": 14
+    },
+    {
+      "sampler": 0,
+      "source": 15
+    },
+    {
+      "sampler": 0,
+      "source": 16
+    },
+    {
+      "sampler": 0,
+      "source": 17
+    },
+    {
+      "sampler": 0,
+      "source": 18
+    },
+    {
+      "sampler": 0,
+      "source": 19
+    },
+    {
+      "sampler": 0,
+      "source": 20
+    }
+  ]
+}

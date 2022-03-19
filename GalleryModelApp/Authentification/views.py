@@ -1,151 +1,135 @@
-from django.shortcuts import render, redirect
-from django.views import View
-import json
-from django.http import JsonResponse
-from django.contrib.auth.models import User
-import json
-from django.http import JsonResponse
-from django.contrib.auth.models import User
-from validate_email import validate_email
-from django.contrib import messages
-from django.core.mail import EmailMessage
-from django.contrib.sites.shortcuts import get_current_site
-from django.contrib.sites.shortcuts import get_current_site
-from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-from django.template.loader import render_to_string
-from .utils import account_activation_token
 from django.urls import reverse
-from django.contrib import auth
+from django.db.models import Max
+from django.utils import timezone
+from django.contrib import messages
+from django.shortcuts import  render
 
-# Create your views here.
+from django.db import IntegrityError
+from django.contrib.auth.decorators import login_required
+from django.http import  HttpResponseRedirect
+from django.contrib.auth import authenticate, login, logout
+
+def luhn_checksum(card_number):
+    def digits_of(n):
+        return [int(d) for d in str(n)]
+
+    digits = digits_of(card_number)
+    odd_digits = digits[-1::-2]
+    even_digits = digits[-2::-2]
+    checksum = 0
+    checksum += sum(odd_digits)
+    for d in even_digits:
+        checksum += sum(digits_of(d*2))
+    return checksum % 10
+
+def index(request):
+    #img = gallery.objects.all()[:6]
+    return render(request,'imagesApp/index.html',{'img':gallery.objects.all()})
+
+def login_view(request):
+    if request.method == "POST":
+
+        # Attempt to sign user in
+        username = request.POST["username"]
+        password = request.POST["password"]
+        # print(username,password)
+        user = authenticate(request, username=username, password=password)
+
+        # Check if authentication successful
+        if user is not None:
+            login(request, user)
+            request.session['user_id'] = user.id
+            # print(request.session['user_id'])
+            return HttpResponseRedirect(reverse("index"))
+        else:
+            return render(request, "authentication/login.html", {
+                "message": "Invalid username and/or password."
+            })
+
+    if request.method == "GET":
+        return render(request, "authentication/login.html")
 
 
-class EmailValidationView(View):
-    def post(self, request):
-        data = json.loads(request.body)
-        email = data['email']
-        if not validate_email(email):
-            return JsonResponse({'email_error': "Email n'est pas valide"}, status=400)
-        if User.objects.filter(email=email).exists():
-            return JsonResponse({'email_error': 'email est deja utilisé, veuillez choiser un autre'}, status=409)
-        return JsonResponse({'email_valid': True})
+@login_required
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect(reverse("index"))
 
 
-class UsernameValidationView(View):
-    def post(self, request):
-        data = json.loads(request.body)
-        username = data['username']
-        if not str(username).isalnum():
-            return JsonResponse({'username_error': "le nom d'utilisateur ne doit contenir que des caractères alphanumériques"}, status=400)
-        if User.objects.filter(username=username).exists():
-            return JsonResponse({'username_error': "désolé nom d'utilisateur utilisé, choisissez-en un autre"}, status=409)
-        return JsonResponse({'username_valid': True})
+def register(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        email = request.POST["email"]
+
+        # Ensure password matches confirmation
+        password = request.POST["password"]
+        confirmation = request.POST["confirmation"]
+        if password != confirmation:
+            return render(request, "authentication/register.html", {
+                "message": "Passwords must match."
+            })
+
+        # Attempt to create new user
+        try:
+            user = User.objects.create_user(username, email, password)
+            user.save()
+            request.session['user_id'] = user.id
+            print(request.session['user_id'])
+            print(" register")
+
+        except IntegrityError as er:
+            print(er)
+            return render(request, "authentication/register.html", {
+                "message": "Username or Email already taken."
+            })
+        login(request, user)
+        return render(request, "authentication/userdetails.html")
+    else:
+        return render(request, "authentication/register.html")
 
 
-class RegistrationView(View):
-    def get(self, request):
-        return render(request, 'authentication/register.html')
+@login_required
+def UserDetailsView(request):
+    if request.method == "POST":
+        phone = request.POST["phone"]
+        card = request.POST["card"]
+        userid = request.session.get("user_id")
 
-    def post(self, request):
-        # GET USER DATA
-        # VALIDATE
-        # create a user account
-
-        username = request.POST['username']
-        email = request.POST['email']
-        password = request.POST['password']
-
-        context = {
-            'fieldValues': request.POST
-        }
-
-        if not User.objects.filter(username=username).exists():
-            if not User.objects.filter(email=email).exists():
-                if len(password) < 6:
-                    messages.error(request, "Password est trés court")
-                    return render(request, 'authentication/register.html', context)
-
-                user = User.objects.create_user(username=username, email=email)
-                user.set_password(password)
-                user.is_active = False
+        print(card, phone, userid)
+        try:
+            if not luhn_checksum(card):
+                user = UserDetails.objects.create(userid=userid, phone=phone, card_number=card)
                 user.save()
-                current_site = get_current_site(request)
-                email_body = {
-                    'user': user,
-                    'domain': current_site.domain,
-                    # 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
-                    'id': user.pk,
-                    'token': account_activation_token.make_token(user),
-                }
-                print(email_body)
-                link = reverse('activate', kwargs={
-                               'uidb64': email_body['id'], 'token': email_body['token']})
+            else:
+                return render(request, "authentication/userdetails.html", {
+                    "message": "Card Invalid."
+                })
 
-                email_subject = 'activer votre compte'
+        except IntegrityError as er:
+            print(er)
+            return render(request, "authentication/userdetails.html", {
+                "message": "Username or Phone already taken."
+            })
+        return HttpResponseRedirect(reverse("index"))
+    else:
+        return render(request, "imagesApp/index.html")
 
-                activate_url = 'http://'+current_site.domain+link
-
-                email = EmailMessage(
-                    email_subject,
-                    'Hi '+user.username +
-                    ', Please click to the link below to activate your account \n'+activate_url,
-                    'noreply@semycolon.com',
-                    [email],
-                )
-                email.send(fail_silently=False)
-                messages.success(request, 'Votre compte est active')
-                return render(request, 'authentication/login.html')
-
-        return render(request, 'authentication/register.html')
-
-
-class VerificationView(View):
-    def get(self, request, id, token):
-        # id = force_text(urlsafe_base64_decode(uidb64))
-        user = User.objects.get(pk=id)
-        if not account_activation_token.check_token(user, token):
-            return redirect('login')
-
-        if user.is_active:
-            return redirect('login')
-        user.is_active = True
-        user.save()
-
-        messages.success(request, 'Account activated successfully')
-        return redirect('login')
-
-
-class LoginView(View):
-    def get(self, request):
-        return render(request, 'authentication/login.html', context={'username': '', 'password': ''})
-
-    def post(self, request):
-        username = request.POST['username']
-        password = request.POST['password']
-        context = {'username': username, 'password': ''}
-        if username and password:
-            user = auth.authenticate(username=username, password=password)
-
-            if user:
-                if user.is_active:
-                    auth.login(request, user)
-                    messages.success(request, 'Bienvenue ' +
-                                     user.username+' ,Vous êtes maintenant connecté')
-                    return redirect('visite')
-                messages.error(
-                    request, "Le compte n'est pas actif, veuillez vérifier votre email")
-                return render(request, 'authentication/login.html')
-            messages.error(
-                request, "Identifiants non valides, réessayez")
-            return render(request, 'authentication/login.html', context)
-
-        messages.error(
-            request, "Merci de compléter tous les champs")
-        return render(request, 'authentication/login.html', context)
-
-
-class LogoutView(View):
-    def post(self, request):
-        auth.logout(request)
-        messages.success(request, "vous avez été déconnecté")
-        return redirect('login')
+def createListing(request):
+        title = request.POST["title"]
+        description = request.POST["description"]
+        startBid = request.POST["startBid"]
+        category = Category.objects.get(id=request.POST["category"])
+        user = request.user
+        image = request.FILES["image"]
+        image2 = request.FILES["image2"]
+        vrmodel = request.FILES["vrmodel"]
+        if image:
+            print(image)
+            listing = AuctionListing.objects.create(
+                name=title, category=category, date=timezone.now(), startBid=startBid, description=description,
+                user=user, image=image, image2=image2, vrmodel=vrmodel, active=True)
+            listing.save()
+            return HttpResponseRedirect(reverse("index"))
+        else:
+            return HttpResponseRedirect(reverse("createListing"))
+        return render(request, "auctions/createListing.html")

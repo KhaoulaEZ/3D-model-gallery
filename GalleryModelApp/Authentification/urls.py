@@ -4,13 +4,9 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 urlpatterns = [
-    #path('register', RegistrationView.as_view(), name="register"),
-    #path('login', LoginView.as_view(), name="login"),
-    #path('logout', LogoutView.as_view(), name="logout"),
-    #path('validate-username', csrf_exempt(UsernameValidationView.as_view()),
-         # name="validate-username"),
-   # path('validate-email', csrf_exempt(EmailValidationView.as_view()),
-      #   name='validate_email'),
-   # path('activate/<id>/<token>',
-      #   VerificationView.as_view(), name='activate'),
+    #path("login_view", views.login_view, name="login"),
+    #path("logout", views.logout_view, name="logout"),
+    #path("register", views.register, name="register"),
+    #path("userdetails", views.UserDetailsView, name="userdetails"),
+    path("createListing", views.createListing, name="createListing"),
 ]
