@@ -12,3 +12,9 @@
 
 
 +python manage.py runserver : ouvrir le serveur 
+
+
+
++ after you run git clone and install requiremnts.txt you have tow path :
+    --- the first is localhost that alow to shows alll 3D model with a pop-up to consulte the description and details .
+    --- the second is localhost/admin for adding new 3D model 
