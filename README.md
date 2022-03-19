@@ -24,6 +24,8 @@
 
     --- the second is localhost/admin for adding new 3D model 
     the admin panel after login : -->username : admin --> password:  admin
+    ![image](https://user-images.githubusercontent.com/37112408/159120315-78e3ae23-4070-4c54-a5cf-297ba85202ec.png)
+ after connect : 
     ![image](https://user-images.githubusercontent.com/37112408/159118803-e7b8f4c7-b9d9-4733-902f-bd9782756137.png)
     
     add new gallery photo :
